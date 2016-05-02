@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crest Explorer</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <script src="/js/xdr.js"></script>
+
+    <script src="/js/CrestExplorer.js"></script>
+
+    <meta http-equiv="cleartype" content="on">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="input-group" id="crestNavMain">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" id="btnBack"><i class="glyphicon glyphicon-arrow-left"></i></button>
+                </div>
+                <input type="text" class="form-control" name="srch-term" id="srch-term" value="https://crest-tq.eveonline.com/">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" id="btnSubmit"><i class="glyphicon glyphicon-refresh"></i></button>
+                </div>
+                <div class="input-group-btn">
+                    <button class="btn btn-default" id="btnHome"><i class="glyphicon glyphicon-home"></i></button>
+                </div>
+            </div>
+    </nav>
+
+    <div style="height: 50px"></div>
+
+    <div class="container" id="loading">
+        <div class="row">
+            <div class="span4"></div>
+            <div class="span4"><img class="center-block" src="/img/loading_logofinal_by_zegerdon-d60eb1v.gif"/></div>
+            <div class="span4"></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="main">
+
+    </div>
+</body>
+</html>
